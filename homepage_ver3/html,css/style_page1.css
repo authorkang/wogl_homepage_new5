@@ -1,0 +1,100 @@
+/* 전체 프레임 */
+
+.page1_main1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px 20%;
+}
+
+.page1_main2 {
+  background-color: rgb(255, 255, 255);
+  padding: 100px 20%;
+  font-size: 200%;
+  font-weight: 500;
+}
+.page1_main3 {
+  background-color: rgb(250, 250, 250);
+  padding: 100px 20%;
+  font-size: 200%;
+  font-weight: 500;
+}
+
+.page1_main4 {
+  background-color: rgb(255, 255, 255);
+  padding: 100px 20% 100px;
+  font-size: 200%;
+  font-weight: 500;
+}
+
+/* 글씨 */
+
+.page1_main1 p {
+  font-size: 400%;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+.page1_main2 p,
+.page1_main4 p {
+  line-height: 2;
+}
+
+.page1_main1 span {
+  text-align: left;
+  font-size: 40px;
+  color: #dccece;
+}
+
+.page1_main3_content {
+  color: rgb(121, 120, 124);
+  font-family: "font2";
+  font-size: 120%;
+}
+
+/* 영상 */
+
+.page1_bg_video {
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+.page1_bg_video_content {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+.page1_bright_control {
+  filter: brightness(30%);
+}
+
+/* 버튼 */
+
+.page1_button1 {
+  padding: 10px 20px;
+  font-size: 70%;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+  width: 500px;
+  height: 80px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page1_button1:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  background-color: #f8f8f8;
+}
+
+.page1_button1:active {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #eee;
+}

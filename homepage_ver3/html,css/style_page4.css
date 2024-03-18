@@ -1,0 +1,84 @@
+/* 전체 프레임 */
+
+.page4_main1 {
+  background-color: rgb(255, 255, 255);
+  height: 1800px;
+  padding: 100px 150px;
+  text-align: center;
+}
+
+.page4_main1_part1 {
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  /* padding: 0px 50px; */
+  text-align: center;
+}
+.page4_main1_space {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+}
+
+/* .page4_main1_part2 {
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  text-align: center;
+} */
+
+/* 글씨 */
+
+.page4_main1_part_list {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(56, 90, 243);
+}
+
+.page4_main1_part_content {
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+/* 버튼 */
+.page4_button1 {
+  padding: 10px 20px;
+  font-size: 28px;
+  font-weight: 1000;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  outline: none;
+  width: 160px;
+  height: 170px;
+}
+.page4_button1:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+.page4_button1_allow {
+  font-size: 30px;
+  padding: 0px 10px;
+  color: #000;
+}
+
+.page4_button2 {
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  width: 550px;
+  height: 150px;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page4_button2:hover {
+  background-color: rgba(0, 0, 0);
+  color: white;
+}

@@ -1,0 +1,376 @@
+@import url("./style_page1.css");
+@import url("./style_page2.css");
+@import url("./style_page3.css");
+@import url("./style_page4.css");
+
+@font-face {
+  font-family: "font1";
+  src: url(./NotoSansKR-Regular.ttf);
+}
+@font-face {
+  font-family: "font2";
+  src: url(./NanumPenScript-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "font1";
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0%;
+}
+
+.nav_logo {
+  width: 350px;
+  height: auto;
+}
+
+.nav_logo_footer {
+  width: 200px;
+  height: auto;
+}
+
+.navbartext_footer {
+  color: rgb(255, 255, 255);
+  padding: 50px 10px 70px 10px;
+  font-size: 15px;
+  font-weight: 200%;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  transform: translate(70px, -30px);
+  padding: 20px 50px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+.navbartext {
+  color: rgb(255, 255, 255);
+  padding: 50px 30px 70px 30px;
+  font-size: 120%;
+  font-weight: 200%;
+}
+.navbar .navbartext:hover {
+  text-decoration: underline;
+}
+
+.button2 {
+  background-color: rgb(244, 245, 201);
+  color: rgb(0, 0, 0);
+  border: solid;
+  border-color: black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.button2:hover {
+  background-color: rgb(239, 239, 156);
+}
+.bg_color {
+  padding: 20px 150px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0);
+}
+
+.footer {
+  padding: 50px 50px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.footer p,
+.footer span {
+  color: white;
+  padding: 0px 20px;
+}
+
+/* 앱화면 */
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0px 0px 15px 0px;
+  }
+  .nav_logo {
+    width: 220px;
+    height: auto;
+    transform: translate(40px, 0px);
+  }
+  .navbar_logo_background {
+    background-color: #000000;
+    padding: 0px 0px 10px 0px;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    transform: translate(0px, 0px);
+    padding: 0px 0px;
+    text-align: center;
+  }
+
+  .navbartext {
+    color: rgb(255, 255, 255);
+    background-color: #1f1f1f;
+    padding: 10px;
+    font-size: 80%;
+    font-weight: 100%;
+    justify-content: center;
+  }
+  .navbartext:hover {
+    text-decoration: none;
+    background-color: #000;
+  }
+
+  .footer {
+    padding: 30px 20px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .footer p,
+  .footer span {
+    color: white;
+    padding: 0px 20px;
+    font-size: 10px;
+  }
+
+  .nav_logo_footer {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbartext_footer {
+    color: rgb(255, 255, 255);
+    padding: 50px 5px 70px 5px;
+    font-size: 10px;
+    font-weight: 100%;
+  }
+
+  /* page1 */
+  .page1_bg_video {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+  }
+  .page1_bg_video_content {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .page1_main1 {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px 6%;
+    text-align: center;
+  }
+
+  .page1_main1 p {
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .page1_main1 span {
+    font-size: 21px;
+  }
+
+  .page1_main2,
+  .page1_main3,
+  .page1_main4 {
+    padding: 100px 6% 100px 6%;
+    text-align: center;
+  }
+
+  .page1_main2 p,
+  .page1_main3 p,
+  .page1_main4 p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .page1_main2 span {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .page1_main3 span,
+  .page1_main4 span {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  p.page1_main3_content {
+    font-size: 20px;
+  }
+  .page1_button1 {
+    width: 320px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  th,
+  td {
+    padding: 20px; /* 패딩 설정 */
+    font-size: 20px;
+  }
+
+  /* 셀 테두리 설정 */
+  th,
+  td {
+    font-size: 15px;
+  }
+
+  /* page2 */
+  .page2_main1 {
+    padding: 220px 8% 130px 8%;
+    font-size: 200%;
+    font-weight: 500;
+  }
+  .page2_main1 p {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 3;
+  }
+  .page2_main2 {
+    padding: 80px 8%;
+  }
+  .page2_main2_list {
+    font-size: 25px;
+  }
+  .page2_main3_list,
+  .page2_main4_list,
+  .page2_main5_list {
+    font-size: 25px;
+  }
+  .page2_main2_content_list {
+    font-size: 20px;
+    padding: 0px 5px;
+    text-underline-offset: 5px;
+  }
+  .page2_main2_content_text {
+    font-size: 15px;
+    padding: 0px 10px;
+    color: #c2bfbf;
+  }
+  .page2_main3 {
+    padding: 80px 8% 80px 8%;
+  }
+  .page2_main3_content_text {
+    font-size: 15px;
+    padding: 0px 10px;
+    line-height: 2;
+  }
+  .page2_main4 {
+    padding: 0px 8% 50px 8%;
+  }
+  .page2_button_content {
+    font-size: 12px;
+    padding: 0px 0px;
+  }
+  .page2_main5 {
+    padding: 50px 8% 80px 8%;
+  }
+  .page2_main5_content {
+    padding: 0px 15px;
+    font-size: 15px;
+    text-decoration-thickness: 1px;
+    line-height: 2.5;
+  }
+
+  .page2_button2 {
+    width: 320px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .page2_button3 {
+    width: 320px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  /* page3 */
+  .page3_main1_list_text {
+    font-size: 17px;
+  }
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .review-stars {
+    color: #ff0000;
+    font-size: 15px;
+    padding: 5px 5px;
+  }
+  .review-date {
+    color: #999;
+    font-size: 15px;
+  }
+
+  .review-content {
+    font-size: 15px;
+    color: #333;
+    padding: 0px 5px;
+  }
+
+  /* page4 */
+  .page4_main1 {
+    padding: 150px 8%;
+    height: 1250px;
+  }
+
+  .page4_main1_space {
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+  }
+
+  .page4_main1_part_list {
+    font-size: 26px;
+  }
+
+  .page4_main1_part_content {
+    font-size: 15px;
+    line-height: 2;
+  }
+  .page4_button1 {
+    padding: 0px 10px;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    outline: none;
+    width: 80px;
+    height: 80px;
+  }
+  .page4_button1_allow {
+    font-size: 10px;
+    padding: 0px 10px;
+    color: #000;
+  }
+
+  .page4_button2 {
+    width: 300px;
+    height: 120px;
+  }
+  .page4_button2 span {
+    font-size: 20px;
+  }
+}
